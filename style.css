@@ -58,7 +58,7 @@
     line-height: 1.4em;
     padding: 5%;
     text-align: justify;
-    background-color: rgb(177, 223, 247);
+    
     
 
 }
@@ -70,20 +70,22 @@
 
 body {
     /* Margin bottom by footer height */
-    margin-bottom: 60px;
-  }
-  .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
-    line-height: 60px; /* Vertically center the text there */
-    background-color: #616164;
     
+  }
+  #footer_nav{
+    background-color: #616164; 
+    
+  }
+  
+ 
+  .container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
   }
   .text_footer{
       color: aliceblue !important;
+      
   }
   html {
     position: relative;
@@ -96,3 +98,26 @@ body {
     padding: 3%;
 
 }
+#contentBody{
+    padding: 1%
+    
+}
+.list-group {
+    list-style: decimal inside;
+}
+
+.list-group-item {
+    display: list-item ;
+    list-style: decimal ;
+    list-style-position: inside;
+    list-style-image: none;
+    list-style-type: decimal;
+    font-size: 16px;
+}
+.title_Article{
+    text-align: center;
+    color: blue;
+    padding: 3%
+}
+
+
