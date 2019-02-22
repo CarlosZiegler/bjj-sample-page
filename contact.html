@@ -36,10 +36,10 @@
       </ul>
     </div>
   </nav>
-<div class="container align-content-center">
+  <div class="container align-content-center">
     <img class="img-fluid align-content-center" src="img/header_contatos.jpg" width="600px" height="auto" alt="contato">
-</div>
-  
+  </div>
+
 
 
   <div class="container">
@@ -47,11 +47,12 @@
     <form>
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="email" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name">
+        <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name">
       </div>
       <div class="form-group">
         <label for="exampleInputEmail1">Endereço de email</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+        <input id="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Email address">
         <small id="emailHelp" class="form-text text-muted">We will never share your email with anyone.</small>
       </div>
       <div class="form-group">
@@ -62,11 +63,25 @@
         <label for="exampleFormControlFile1">Send file</label>
         <input type="file" class="form-control-file" id="exampleFormControlFile1">
       </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
-      <br><br>
+      <div class="form-group">
+        <label for="country">Country:</label>
+        <input id="country" name="country" list="continent" placeholder="Country" class="form-control" type="text">
+        <datalist id="continent">
+          <option value="America"></option>
+          <option value="Europe"></option>
+          <option value="Asia"></option>
+          <option value="South America"></option>
+          <option value="Australie"></option>
+        </datalist>
+
+      </div>
+      <button id="send" type="submit" class="btn btn-primary">Send</button>
+  </div>
+
+  <br><br>
 
 
-    </form>
+  </form>
   </div>
 
   <nav class="navbar navbar-default navbar-fixed-bottom footer_bottom_nav " id="footer_nav">
