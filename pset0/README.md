@@ -1,3 +1,4 @@
 # Project 0
 
-Web Programming with Python and JavaScript
+Web Programming HTML, CSS and Bootstrap 4
+
