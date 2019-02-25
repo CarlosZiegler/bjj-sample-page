@@ -6,18 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BJJ_House</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    
     <link rel="stylesheet" href="style.css">
+    <!--scss style for nav-->
+    <link rel="stylesheet" href="style-scss.css">
+    
 
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">BJJ_House</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item ">
@@ -38,9 +44,6 @@
     <div class="container align-content-center">
         <img class="img-fluid align-content-center" src="img/header_contatos.jpg" width="600px" height="auto" alt="contato">
     </div>
-
-
-
     <div class="container">
 
         <form>
@@ -50,32 +53,42 @@
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Email Adress</label>
-                <input id="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail address">
-                <small id="emailHelp" class="form-text text-muted">We will never share your email with anyone.</small>
+                <input id="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="E-mail address">
+                <small id="27_faq" class="form-text text-muted">We will never share your email with anyone. more...</small>
+
+                <span class="span-hide " id="27">
+                    <p class="background-span">We respect your privacy and do not tolerate
+                        spam and will never sell, rent, lease or give away your information (name, address, email,
+                        etc.) to any third party. Nor will we send you unsolicited email.
+
+                        If you choose to give your name and email address into one or more of our site's registration
+                        forms, then we will send you emails relating to the mailing list(s) or service(s) you joined
+                        and the Keyword Expert newsletter, as well as marketing offers from time to time. You may opt
+                        out of receiving future mailings from our mailing lists; see the choice/opt-out section below..</p>
+                </span>
+
             </div>
             <div class="form-group">
                 <label for="message">Message</label>
                 <textarea class="form-control" id="message" rows="3"></textarea>
             </div>
-
             <div class="form-group">
                 <label for="country">Country:</label>
                 <input id="country" name="country" list="continent" placeholder="Country" class="form-control" type="text">
                 <datalist id="continent">
-          <option value="America"></option>
-          <option value="Europe"></option>
-          <option value="Asia"></option>
-          <option value="South America"></option>
-          <option value="Australie"></option>
-        </datalist>
+                    <option value="America"></option>
+                    <option value="Europe"></option>
+                    <option value="Asia"></option>
+                    <option value="South America"></option>
+                    <option value="Australie"></option>
+                </datalist>
 
             </div>
-            <button id="send" type="submit" class="btn btn-primary">Send</button>
+            <button id="send" type="submit" class="btn btn-primary btn-scss">Send</button>
+
     </div>
-
     <br><br>
-
-
     </form>
     </div>
 
@@ -85,10 +98,28 @@
         </div>
     </nav>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script>
+        /**
+        Function for hide and show Span id 27faq
+        **/
+        "use strict";
+        var switchText = document.getElementById("27_faq");
+        var elToggled = document.getElementById("27");
+        elToggled.style.display = "none";
+        switchText.addEventListener("click", function () {
+            if (elToggled.style.display == "none") {
+                elToggled.style.display = "block";
+            } else {
+                elToggled.style.display = "none";
+            }
+        }, false);
+    </script>
 </body>
 
 </html>

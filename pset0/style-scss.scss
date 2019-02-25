@@ -1,0 +1,66 @@
+//variable sass
+$main-color: #4a82eb;
+
+.btn-scss {
+    background: $main-color
+}
+
+//nesting sass
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+    }
+}
+//SCSS inheritance
+%alert {
+    width: 100%;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 4px;
+
+    p,
+    &:before {
+        float: left;
+    }
+}
+
+.alert-success {
+    background: #75aa61;
+    @extend %alert;
+
+    &:before {
+        background-color: #98bf89;
+        background-position: -47px 7px;
+    }
+}
+
+small {
+    cursor: pointer;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #1A72D3;
+}
+
+.span-hide {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    display: none;
+}
+
+.background-span {
+    padding: 10px;
+    background-color: #FFFACD;
+}
